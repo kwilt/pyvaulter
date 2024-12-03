@@ -1,1 +1,4 @@
 /.venv/
+/src/pyvaulter.egg-info/
+/dist/
+.idea/
