@@ -1,6 +1,6 @@
 [project]
 name = "pyvaulter"
-version = "0.1.0"
+version = "0.2.0"
 description = "Encrypt sensitive data. Emulates much of the functionality of Ansible Vaults but for Python."
 readme = "README.md"
 authors = [
@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.scripts]
-pyvaulter = "pyvaulter:main"
+pyvaulter = "pyvaulter.main:main"
 
 [build-system]
 requires = ["setuptools>=61"]

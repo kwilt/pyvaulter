@@ -1,1 +1,1 @@
-from .pyvaulter import decrypt
+from .main import decrypt
