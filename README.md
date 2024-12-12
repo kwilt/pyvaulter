@@ -21,7 +21,7 @@ already-existing file on your system. It will not encrypt the original file, but
 You can use `pyvaulter` in your script or application to decrypt the contents of files at runtime. So, in practice the
 workflow looks like this:
 
-1. Encrypt an existing file, or create a new encrypted file with pyvault
+1. Encrypt an existing file, or create a new encrypted file with pyvaulter
 2. In your script or application, decrypt the file like so:
 ```python
 from pyvaulter import decrypt
