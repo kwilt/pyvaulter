@@ -1,6 +1,6 @@
 [project]
 name = "pyvaulter"
-version = "0.3.0"
+version = "0.3.1"
 description = "Encrypt sensitive data. Emulates much of the functionality of Ansible Vaults but for Python."
 readme = "README.md"
 authors = [

@@ -1,5 +1,8 @@
 # pyvaulter
+
 A very simple Python module that can be used to encrypt sensitive data. Emulates much of the functionality of Ansible Vaults but for Python.
+
+## Requires Linux: Uses `vim` for editing, and `less` for viewing
 
 ## Basic Usage (Creating/Editing Encrypted Files)
 
@@ -23,6 +26,7 @@ workflow looks like this:
 
 1. Encrypt an existing file, or create a new encrypted file with pyvaulter
 2. In your script or application, decrypt the file like so:
+
 ```python
 from pyvaulter import decrypt
 from getpass import getpass

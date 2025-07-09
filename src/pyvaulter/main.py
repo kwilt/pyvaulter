@@ -125,7 +125,7 @@ def is_file_encrypted(file_path: str) -> bool:
     """If file name ends in '.enc' then assume the file is encrypted and return True, if not, return False"""
     if file_path.endswith('.enc'):
         return True
-    if not file_path.endswith('.enc'):
+    else:
         return False
 
 
@@ -159,6 +159,10 @@ def main():
     
     command = args.command
     file_name = args.file_name
+
+    # Exit early if the file does not exist
+    if (command == "edit" or command == "view" or command == "encrypt") and not os.path.exists(file_name):
+        sys.exit(f"{Color.warning}File {file_name} does not exist.{Color.end}")
 
     # Exit if the file targeted to edit or view isn't encrypted
     if (command == "edit" or command == "view") and not is_file_encrypted(file_name):
